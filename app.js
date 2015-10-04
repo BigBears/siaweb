@@ -3,6 +3,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
+var exphbs = require('express-handlebars');
 
 var app = express();
 
@@ -14,7 +15,12 @@ app.use('/', dashboard);
 app.use('/preferences', preferences);
 app.use('/login', login);
 
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
+
 app.listen(3000);
-app.set('view engine', 'jade');
+
+
 
 module.exports = app;
