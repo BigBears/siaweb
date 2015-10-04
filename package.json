@@ -1,0 +1,31 @@
+{
+  "name": "siaweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "favicon": "0.0.2",
+    "logger": "0.0.1",
+    "mongoose": "^4.1.9",
+    "passport": "^0.3.0",
+    "path": "^0.12.7",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BigBears/siaweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BigBears/siaweb/issues"
+  },
+  "homepage": "https://github.com/BigBears/siaweb"
+}
