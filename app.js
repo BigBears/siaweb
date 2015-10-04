@@ -18,6 +18,7 @@ app.use('/login', login);
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
+app.use(express.static('vendor'));
 
 app.listen(3000);
 
